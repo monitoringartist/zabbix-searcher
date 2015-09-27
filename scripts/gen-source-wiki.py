@@ -23,6 +23,8 @@ for tr in d('table.wikitable.sortable tr'):
                 a = td.getchildren()[0]
                 name = name + ' ' + a.text.strip()
                 url =  a.get('href')
+                if url[0] == '/':
+                    url = 'http://zabbix.org' + url
         except:
             continue                
                     
