@@ -144,7 +144,7 @@ ul {
   .emoji-wrapper i.fa {
     text-align: center;
     width: 1.1em; }
-  .emoji-wrapper i.fa:hover {
+  .emoji-wrapper a:hover i.fa {
     color:#fff;
     background-color: #0275b8; }    
   .emoji-wrapper a {
