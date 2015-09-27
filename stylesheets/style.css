@@ -141,6 +141,8 @@ ul {
     margin-top: -3px; }
   .emoji-wrapper input {
     margin-left: 5px; }
+  .emoji-wrapper i.fa {
+    width: 1.1em; }
   .emoji-wrapper a {
     width: 100%;
     display: block; }
