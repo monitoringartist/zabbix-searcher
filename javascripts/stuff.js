@@ -133,7 +133,7 @@ faicons = {
   'weather': 'bolt',
   'vm': 'server',
   'kvm': 'server',
-  'openvz': 'server'
+  'openvz': 'server',
   'cisco': 'sitemap',
   'juniper': 'sitemap',
   'network': 'sitemap',   
