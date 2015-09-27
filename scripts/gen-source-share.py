@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+import urllib, json
+url = "https://share.zabbix.com/templates/beez3/html/mod_mt_search/live_search.php?term=%25"
+response = urllib.urlopen(url)
+data = json.loads(response.read())
+arr = {}
+for item in data['list']:
+  arr[item['name'].replace(' ','-')] = {
+    'url': 'https://share.zabbix.com' + item['link'],
+    'keywords': item['name'].lower().split(' '), 
+    'name': item['name'],
+  }
+#print arr    
+print json.dumps(arr)  

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="icon" href="assets/favicon.png">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="Zabbix searcher" property="og:title">
+    <meta content="Zabbix searcher" property="title">
+    <meta content="Find the Zabbix project that matches your keywords!" property="description">
+    <meta content="Find the Zabbix project that matches your keywords!" property="og:description">
+    <meta content="appicon.png" property="og:image">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Zabbix searcher" />
+    <title>Zabbix searcher</title>
+    <link rel="apple-touch-icon-precomposed" sizes="64x64" href="/appicon.png">
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="javascripts/jquery.js"></script>    
+    <script src="javascripts/stuff.js"></script>
+    <script src="javascripts/search.js"></script>
+    <script>
+      // TODO GA code
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <input type="search" class="input-search speedy-filter" placeholder="Search">
+      <a href="#" class="button js-clear-search clear-search" title="Clear search">&times;</a>
+      <div class="fright">
+        Sources:
+        <a href="https://github.com/zabbix/zabbix-community-repos" target="_blank" class="button small">
+          <div>Github Zabbix community repos</div>
+        </a>
+        <a href="https://share.zabbix.com" target="_blank" class="button small">
+          <div>Share Zabbix</div>
+        </a>
+        <a href="http://zabbix.org/wiki/Zabbix_Templates" target="_blank" class="button small">
+          <div>Zabbix Wiki</div>
+        </a>
+        <a href="http://www.monitoringartist.com" target="_blank" class="logo" title="Maintained by Monitoring Artist">
+          <img src="assets/Monitoring-Artist-logo.png">
+        </a>
+      </div>      
+            
+    </header>
+
+    <section class="list">
+      <ul class="container">
+      </ul>
+
+      <div class="loading">
+        Loading
+      </div>
+
+      <div class="no-results">
+        <div class="emoji s_cry" title="cry"></div>
+        <br><div class="no-results-text">Sorry, no results</div>
+        <p class="call">
+          Help your future self by creating and adding
+          <strong class="keyword"></strong> project to
+        </p>
+        <p>
+          <a class="button js-contribute contribute-button" href="https://github.com/zabbix/zabbix-community-repos" target="_blank">Github Zabbix community repos</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      Maintained by <a href="http://www.monitoringartist.com" target="_blank" title="DevOps / Monitoring / Zabbix / Zenoss"><img src="assets/favicon.png"> Monitoring Artist</a>, updated on 2015-09-27.
+    </footer>
+
+    <a href="https://github.com/monitoringartist/zabbix-searcher" class="forkme">
+      <img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+    </a>
+
+  </body>
+</html>
