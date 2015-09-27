@@ -24,7 +24,7 @@ $.getJSON('/zabbix-searcher/sources/github-community-repos.json', function (proj
     var charHTML
     var icon = 'file'
     $.each(project["keywords"], function( index, value ){
-      if ($.inArray(value, faicons) > -1) {
+      if (value in faicons) {
         icon = faicons[value]
         return false
       }
@@ -45,7 +45,7 @@ $(document).on('source-github:ready', function () {
       var charHTML
       var icon = 'file'
       $.each(project["keywords"], function( index, value ){
-        if ($.inArray(value, faicons) > -1) {
+        if (value in faicons) {
           icon = faicons[value]
           return false
         }
@@ -67,7 +67,7 @@ $(document).on('source-share:ready', function () {
       var charHTML
       var icon = 'file'
       $.each(project["keywords"], function( index, value ){
-        if ($.inArray(value, faicons) > -1) {
+        if (value in faicons) {
           icon = faicons[value]
           return false
         }
@@ -98,7 +98,7 @@ $(document).on('click', '.js-contribute', function () {
   ga('send', 'event', 'contribute', 'click')
 })
 
-faicons = [
+faicons = {
   // custom icon mapping
   'monitoringartist': 'star',
   'aws': 'amazon',    
@@ -994,4 +994,4 @@ faicons = [
   'script': 'wrench',
   'hw': 'desktop',
   'integration': 'cogs'  
-]
+}
