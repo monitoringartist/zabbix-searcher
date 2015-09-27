@@ -35,47 +35,51 @@ $.getJSON('/zabbix-searcher/sources/github-community-repos.json', function (proj
       charHTML + "<span class='keywords'>" + project["keywords"] + "</span></li>")
     counter++
   })
-  $(document).trigger('search:ready')
+  $(document).trigger('source-github:ready')
 })
-$.getJSON('/zabbix-searcher/sources/share-zabbix.json', function (projects) {
-  var container = $('.container')
-  Object.keys(projects).forEach( function (key) {
-    var project = projects[key]
-    var charHTML
-    var icon = 'file'
-    $.each(project["keywords"], function( index, value ){
-      if ($.inArray(value, faicons) > -1) {
-        icon = value
-        return false
-      }
-    });    
-    charHTML = "<div><a target='_blank' title='#" + counter + " " + project['name'] + "' href='" + 
-      project['url'] + "'><i class='fa fa-" + icon + "'></i> " + project['name'] + "</a></div>"
-    container.append("<li class='result emoji-wrapper'>" +
-      charHTML + "<span class='keywords'>" + project["keywords"] + "</span></li>")
-    counter++
+$(document).on('source-github:ready', function () {  
+  $.getJSON('/zabbix-searcher/sources/share-zabbix.json', function (projects) {
+    var container = $('.container')
+    Object.keys(projects).forEach( function (key) {
+      var project = projects[key]
+      var charHTML
+      var icon = 'file'
+      $.each(project["keywords"], function( index, value ){
+        if ($.inArray(value, faicons) > -1) {
+          icon = value
+          return false
+        }
+      });    
+      charHTML = "<div><a target='_blank' title='#" + counter + " " + project['name'] + "' href='" + 
+        project['url'] + "'><i class='fa fa-" + icon + "'></i> " + project['name'] + "</a></div>"
+      container.append("<li class='result emoji-wrapper'>" +
+        charHTML + "<span class='keywords'>" + project["keywords"] + "</span></li>")
+      counter++
+    })
+    $(document).trigger('source-share:ready')
   })
-  $(document).trigger('search:ready')
-})
-$.getJSON('/zabbix-searcher/sources/zabbix-wiki.json', function (projects) {
-  var container = $('.container')
-  Object.keys(projects).forEach( function (key) {
-    var project = projects[key]
-    var charHTML
-    var icon = 'file'
-    $.each(project["keywords"], function( index, value ){
-      if ($.inArray(value, faicons) > -1) {
-        icon = value
-        return false
-      }
-    });    
-    charHTML = "<div><a target='_blank' title='#" + counter + " " + project['name'] + "' href='" + 
-      project['url'] + "'><i class='fa fa-" + icon + "'></i> " + project['name'] + "</a></div>"
-    container.append("<li class='result emoji-wrapper'>" +
-      charHTML + "<span class='keywords'>" + project["keywords"] + "</span></li>")
-    counter++
+})  
+$(document).on('source-share:ready', function () {
+  $.getJSON('/zabbix-searcher/sources/zabbix-wiki.json', function (projects) {
+    var container = $('.container')
+    Object.keys(projects).forEach( function (key) {
+      var project = projects[key]
+      var charHTML
+      var icon = 'file'
+      $.each(project["keywords"], function( index, value ){
+        if ($.inArray(value, faicons) > -1) {
+          icon = value
+          return false
+        }
+      });    
+      charHTML = "<div><a target='_blank' title='#" + counter + " " + project['name'] + "' href='" + 
+        project['url'] + "'><i class='fa fa-" + icon + "'></i> " + project['name'] + "</a></div>"
+      container.append("<li class='result emoji-wrapper'>" +
+        charHTML + "<span class='keywords'>" + project["keywords"] + "</span></li>")
+      counter++
+    })
+    $(document).trigger('search:ready')
   })
-  $(document).trigger('search:ready')
 })
 
 $(document).keydown(function (e) { focusOnSearch(e) })
