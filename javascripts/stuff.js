@@ -142,6 +142,7 @@ faicons = {
   'tomcat': 'coffee',
   'jboss': 'coffee',
   'backup': 'hdd-o',
+  'backuppc': 'hdd-o',
   'array': 'hdd-o',
   'freenas': 'hdd-o',
   'raid': 'hdd-o',
