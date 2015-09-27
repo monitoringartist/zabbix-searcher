@@ -161,8 +161,8 @@ faicons = {
   'asa': 'sitemap',
   'router': 'sitemap',
   'ntp': 'clock-o',
-  'ups': 'battery-full',
-  'apc': 'battery-full',     
+  'ups': 'battery-half',
+  'apc': 'battery-half',     
   // auto icon mapping
   'bars': 'bars',
   'caret-down': 'caret-down',
