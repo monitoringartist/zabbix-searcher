@@ -124,6 +124,7 @@ faicons = {
   'debian': 'linux',  
   'printer': 'print',
   'xerox': 'print',
+  'kyocera': 'print',
   'workcenter': 'print',
   'laserjet': 'print',  
   'mikrotik': 'wifi',
