@@ -138,6 +138,7 @@ faicons = {
   'jboss': 'coffee',
   'backup': 'hdd-o',
   'array': 'hdd-o',
+  'freenas': 'hdd-o',
   'raid': 'hdd-o',
   'qnap': 'hdd-o',
   'hdd': 'hdd-o',
