@@ -101,7 +101,9 @@ $(document).on('click', '.js-contribute', function () {
 faicons = {
   // custom icon mapping
   'monitoringartist': 'star',
-  'aws': 'amazon',    
+  'aws': 'amazon', 
+  'api': 'arrows-alt',
+  'cli': 'terminal',   
   // auto icon mapping
   'bars': 'bars',
   'caret-down': 'caret-down',
