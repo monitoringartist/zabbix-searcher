@@ -255,9 +255,6 @@ ul, li {
   -o-transform: scale(0.8);
   transform: scale(0.8); }
 
-[data-clipboard-text] {
-  cursor: pointer; }
-
 .no-results {
   padding: 50px 30px;
   text-align: center;
@@ -293,20 +290,20 @@ code {
 .fright {
  float: right;
  vertical-align: middle;
- font-weight: bold;
+ font-weight: bold; 
 }
 
+.logo {
+  float: right;
+}
 .logo img {
  width: auto;
  height: auto;
 }  
 
-@media (max-width: 480px) {
+@media (max-width: 685px) {
   .input-search {
-    width: 90%;
-    position: absolute; }
-    .input-search:focus {
-      width: 100%; }
+    width: 65%; }
 
   input {
     font-size: 14px; }
@@ -325,3 +322,9 @@ code {
   .fright {
     display: none;
   } }
+
+@media (max-width: 960px) {
+  .forkme {
+    display: none;
+  }
+}
