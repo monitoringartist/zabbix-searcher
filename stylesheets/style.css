@@ -150,7 +150,8 @@ ul {
     width: 100%;
     display: block; }
   .emoji-wrapper a:hover, .emoji-wrapper a:focus{
-   text-decoration: underline; }
+   text-decoration: underline; 
+   color: #013e62; }
 
 .global-zeroclipboard-container {
   background-color: rgba(0, 0, 0, 0.02); }
