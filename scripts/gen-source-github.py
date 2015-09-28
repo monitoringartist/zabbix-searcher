@@ -5,9 +5,7 @@ from collections import OrderedDict
 
 def github_query(url):
      
-    headers = {'Authorization': 'token ???'}
-            
-    s = requests.get(url, headers=headers)
+    s = requests.get(url)
     if s.status_code != 200:
        s = json.loads(s.text)
        print s['message']
