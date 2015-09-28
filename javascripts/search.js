@@ -41,7 +41,7 @@ function setRelatedDOMVisibility (keyword) {
 }
 
 $(document).on('search keyup', '.speedy-filter', function () {
-  location.hash = $(this).val().replace(' ', '_')
+  location.hash = $(this).val().replace(' ', '%20')
 })
 
 $(document).on('click', '.group', function () {
