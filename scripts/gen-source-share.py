@@ -11,6 +11,6 @@ for item in data['list']:
     'url': 'https://share.zabbix.com' + item['link'],
     'keywords': item['name'].lower().replace('_',' ').split(' '), 
     'name': item['name'],
-    'icon': ziconizing.iconizing(item['name'], item['name'].lower().split(' ')) 
+    'icon': ziconizing.iconizing(item['name'], item['name'].lower().replace('_',' ').split(' ')) 
   }
 print json.dumps(arr)  
