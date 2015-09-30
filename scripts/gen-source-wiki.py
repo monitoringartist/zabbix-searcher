@@ -10,19 +10,21 @@ for tr in d('table.wikitable.sortable tr'):
     i = 1
     name = ''
     url = ''
+    vendor = ''
     for td in tr.getchildren():
         if td.tag == 'th':
             continue
             
         if i == 1:
             name = 'Template ' + td.text.strip()
+            vendor =  td.text.strip()
         
         try: 
             # TODO
             if i == 2:
                 a = td.getchildren()[0]
-                if a.text.strip().startswith(td.text.strip()):
-                    name =  a.text.strip()
+                if a.text.strip().startswith(vendor):
+                    name =  'Template ' + a.text.strip()
                 else:
                     name = name + ' ' + a.text.strip()
                 url =  a.get('href')
