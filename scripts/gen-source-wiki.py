@@ -21,7 +21,10 @@ for tr in d('table.wikitable.sortable tr'):
             # TODO
             if i == 2:
                 a = td.getchildren()[0]
-                name = name + ' ' + a.text.strip()
+                if a.text.strip().startswith(name):
+                    name =  a.text.strip()
+                else:
+                    name = name + ' ' + a.text.strip()
                 url =  a.get('href')
                 if url[0] == '/':
                     url = 'http://zabbix.org' + url
