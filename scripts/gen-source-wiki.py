@@ -2,7 +2,8 @@
 
 from pyquery import PyQuery as pq
 from lxml import etree
-import urllib, json
+import urllib, json, ziconizing
+
 arr = {}
 d = pq(url='http://zabbix.org/wiki/Zabbix_Templates')
 for tr in d('table.wikitable.sortable tr'):
@@ -41,7 +42,8 @@ for tr in d('table.wikitable.sortable tr'):
     arr[name.replace(' ','-')] = {
       'name': name,
       'url': url,
-      'keywords': name.lower().split(' ')
+      'keywords': name.lower().split(' '),
+      'icon':  ziconizing.iconizing(name, name.lower().split(' '))
     }
-#print arr    
-print json.dumps(arr)  
+print json.dumps(arr)
+

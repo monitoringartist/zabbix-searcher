@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-import urllib, json
+import urllib, json, ziconizing
+
 url = "https://share.zabbix.com/templates/beez3/html/mod_mt_search/live_search.php?term=%25"
 response = urllib.urlopen(url)
 data = json.loads(response.read())
@@ -10,6 +11,6 @@ for item in data['list']:
     'url': 'https://share.zabbix.com' + item['link'],
     'keywords': item['name'].lower().split(' '), 
     'name': item['name'],
+    'icon': ziconizing.iconizing(item['name'], item['name'].lower().split(' ')) 
   }
-#print arr    
 print json.dumps(arr)  
