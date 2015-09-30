@@ -9,7 +9,7 @@ arr = {}
 for item in data['list']:
   arr[item['name'].replace(' ','-')] = {
     'url': 'https://share.zabbix.com' + item['link'],
-    'keywords': item['name'].lower().split(' '), 
+    'keywords': item['name'].lower().replace('_',' ').split(' '), 
     'name': item['name'],
     'icon': ziconizing.iconizing(item['name'], item['name'].lower().split(' ')) 
   }

@@ -894,8 +894,6 @@ def iconizing(name, keywords):
         return 'star'
 
     # generic types
-    if name.lower().startswith('script '):
-        return 'wrench'
     if name.lower().startswith('api '):
         return 'retweet'
     if name.lower().startswith('cli '):
@@ -906,12 +904,12 @@ def iconizing(name, keywords):
         return 'cube'
 
     # custom brands
-    if any(word in keywords for word in 'aws amazon ec ec2 elb rds'.split(' ')):
-        return 'amazon'
     if any(word in keywords for word in 'bash sshd'.split(' ')):
         return 'terminal'
     if any(word in keywords for word in 'db database sql rabbitmq redis riak elastic elasticsearch informix postgresql memcached mysql zbxora'.split(' ')):
         return 'database'
+    if any(word in keywords for word in 'aws amazon ec ec2 elb rds'.split(' ')):
+        return 'amazon'
     if any(word in keywords for word in 'grafana grafana-zabbix'.split(' ')):
         return 'bar-chart'
     if any(word in keywords for word in 'linux debian fedore redhat yum ubuntu'.split(' ')):
@@ -920,20 +918,22 @@ def iconizing(name, keywords):
         return 'print'
     if any(word in keywords for word in 'wifi mikrotik ubiquiti airfiber'.split(' ')):
         return 'wifi'
-    if any(word in keywords for word in 'postfix mail email exim zimbra exchange'.split(' ')):
+    if any(word in keywords for word in 'postfix mail email exim zimbra exchange qmail'.split(' ')):
         return 'envelope'
     if any(word in keywords for word in 'java jvm tomcat jboss'.split(' ')):
         return 'coffee'
     if any(word in keywords for word in 'backup backupc array freenas raid qnap hdd disk netapp storwize purestorage synology hddtemp iostat emc storage veeam'.split(' ')):
         return 'hdd-o'
     if any(word in keywords for word in 'weather'.split(' ')):
-        return 'bold'
+        return 'bolt'
     if any(word in keywords for word in 'hadoop hbase storm'.split(' ')):
         return 'table'
     if any(word in keywords for word in 'cisco juniper switch router asa'.split(' ')):
         return 'sitemap'
     if any(word in keywords for word in 'ntp'.split(' ')):
         return 'clock-o'
+    if any(word in keywords for word in 'wowza'.split(' ')):
+        return 'video-camera'
     if any(word in keywords for word in 'ups apc'.split(' ')):
         return 'battery-half'
     if any(word in keywords for word in 'vm kvm openvz xen vmware esxi server'.split(' ')):
@@ -946,6 +946,8 @@ def iconizing(name, keywords):
 
     if name.lower().startswith('integration '):
         return 'cogs'
+    if name.lower().startswith('script '):
+        return 'wrench'
 
     # default
     return 'file'
