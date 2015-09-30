@@ -21,7 +21,7 @@ for tr in d('table.wikitable.sortable tr'):
             # TODO
             if i == 2:
                 a = td.getchildren()[0]
-                if a.text.strip().startswith(name):
+                if a.text.strip().startswith(td.text.strip()):
                     name =  a.text.strip()
                 else:
                     name = name + ' ' + a.text.strip()
