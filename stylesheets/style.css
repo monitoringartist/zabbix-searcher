@@ -305,6 +305,9 @@ code {
 @media (max-width: 685px) {
   .input-search {
     width: 65%; }
+    
+  .no-results {        
+    padding: 5px }    
 
   input {
     font-size: 14px; }
