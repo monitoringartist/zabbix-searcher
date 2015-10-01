@@ -936,6 +936,8 @@ def iconizing(name, keywords):
         return 'video-camera'
     if any(word in keywords for word in 'ups apc'.split(' ')):
         return 'battery-half'
+    if any(word in keywords for word in 'windows'.split(' ')):
+        return 'windows'
     if any(word in keywords for word in 'vm kvm openvz xen vmware esxi server'.split(' ')):
         return 'server'
 
