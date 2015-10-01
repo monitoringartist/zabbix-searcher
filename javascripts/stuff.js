@@ -17,7 +17,7 @@ function focusOnSearch (e) {
 }
 
 var counter = 1
-$.getJSON('/zabbix-searcher/sources/github-community-repos.json', function (projects) {  
+$.getJSON('./sources/github-community-repos.json', function (projects) {  
   var container = $('.container')
   Object.keys(projects).forEach( function (key) {
     var project = projects[key]
@@ -31,7 +31,7 @@ $.getJSON('/zabbix-searcher/sources/github-community-repos.json', function (proj
   $(document).trigger('source-github:ready')
 })
 $(document).on('source-github:ready', function () {  
-  $.getJSON('/zabbix-searcher/sources/share-zabbix.json', function (projects) {
+  $.getJSON('./sources/share-zabbix.json', function (projects) {
     var container = $('.container')
     Object.keys(projects).forEach( function (key) {
       var project = projects[key]
@@ -46,7 +46,7 @@ $(document).on('source-github:ready', function () {
   })
 })  
 $(document).on('source-share:ready', function () {
-  $.getJSON('/zabbix-searcher/sources/zabbix-wiki.json', function (projects) {
+  $.getJSON('./sources/zabbix-wiki.json', function (projects) {
     var container = $('.container')
     Object.keys(projects).forEach( function (key) {
       var project = projects[key]
