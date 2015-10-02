@@ -12,7 +12,7 @@ ecode = 0
 for file in files:    
     with open(file) as data_file:
         data = json.load(data_file)
-        print '=== FILE: %s (%d) ===' % (file, len(data))
+        print '=== FILE: %s (%d projects) ===' % (file, len(data))
         if len(data) < 100:
             print 'Problem with parsing data for ' + file
             if 'share' not in file:
