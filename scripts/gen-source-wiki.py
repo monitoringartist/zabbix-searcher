@@ -60,7 +60,7 @@ for a in d('li a.internal'):
       'name': name.strip().replace('_', ' ').replace('-',' ').replace('.xml','') + ' (official)',
       'url': url,
       'keywords': name.lower().replace('_',' ').replace('-',' ').replace('.xml','').replace('template','').split(' '),
-      'icon':  ziconizing.iconizing(name, name.lower().replace('_',' ').replace('.xml','').split(' '))
+      'icon':  ziconizing.iconizing(name, name.lower().replace('_',' ').replace('-',' ').replace('.xml','').split(' '))
     }
     arr[name.replace(' ','-')]['keywords'].append('official')
 

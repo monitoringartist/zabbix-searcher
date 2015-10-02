@@ -904,7 +904,7 @@ def iconizing(name, keywords):
         return 'cube'
 
     # custom brands
-    if any(word in keywords for word in 'bash sshd'.split(' ')):
+    if any(word in keywords for word in 'telnet bash sshd'.split(' ')):
         return 'terminal'
     if any(word in keywords for word in 'db database sql rabbitmq redis riak elastic elasticsearch informix postgresql memcached mysql zbxora'.split(' ')):
         return 'database'
@@ -912,17 +912,21 @@ def iconizing(name, keywords):
         return 'amazon'
     if any(word in keywords for word in 'grafana grafana-zabbix'.split(' ')):
         return 'bar-chart'
-    if any(word in keywords for word in 'linux debian fedore redhat yum ubuntu'.split(' ')):
+    if any(word in keywords for word in 'linux debian fedore redhat yum ubuntu openbsd aix'.split(' ')):
         return 'linux'
+    if any(word in keywords for word in 'solaris'.split(' ')):
+        return 'sun-o'
+    if any(word in keywords for word in 'mac'.split(' ')):
+        return 'apple'
     if any(word in keywords for word in 'printer xerox kyocera workcenter laserjet'.split(' ')):
         return 'print'
     if any(word in keywords for word in 'wifi mikrotik ubiquiti airfiber'.split(' ')):
         return 'wifi'
-    if any(word in keywords for word in 'postfix mail email exim zimbra exchange qmail'.split(' ')):
+    if any(word in keywords for word in 'postfix mail email exim zimbra exchange qmail imap'.split(' ')):
         return 'envelope'
-    if any(word in keywords for word in 'java jvm tomcat jboss'.split(' ')):
+    if any(word in keywords for word in 'java jvm tomcat jboss jmx'.split(' ')):
         return 'coffee'
-    if any(word in keywords for word in 'backup backupc array freenas raid qnap hdd disk netapp storwize purestorage synology hddtemp iostat emc storage veeam'.split(' ')):
+    if any(word in keywords for word in 'disks backup backupc array freenas raid qnap hdd disk netapp storwize purestorage synology hddtemp iostat emc storage veeam'.split(' ')):
         return 'hdd-o'
     if any(word in keywords for word in 'weather'.split(' ')):
         return 'bolt'
