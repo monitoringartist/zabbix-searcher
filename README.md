@@ -13,7 +13,9 @@ Please donate to author, so he can continue to publish another awesome projects
 for free:
 
 [![Paypal donate button](http://jangaraj.com/img/github-donate-button02.png)]
-(https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8LB6J222WRUZ4) 
+(https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8LB6J222WRUZ4)
+
+Current CI status: [![Build Status](https://drone.io/github.com/monitoringartist/zabbix-searcher/status.png)](https://drone.io/github.com/monitoringartist/zabbix-searcher/latest)  
 
 Author
 ======

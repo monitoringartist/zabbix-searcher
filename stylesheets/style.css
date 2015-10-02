@@ -307,7 +307,7 @@ code {
     width: 65%; }
     
   .no-results {        
-    padding: 5px }    
+    padding: 0; }    
 
   input {
     font-size: 14px; }
