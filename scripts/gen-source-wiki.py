@@ -45,5 +45,24 @@ for tr in d('table.wikitable.sortable tr'):
       'keywords': name.lower().split(' '),
       'icon':  ziconizing.iconizing(name, name.lower().split(' '))
     }
+# official templates
+d = pq(url='http://zabbix.org/wiki/Zabbix_Templates/Official_Templates')
+for a in d('li a.internal'):
+    if not a.text.strip().startswith('Template_'):
+        continue
+
+    name = a.text.strip()
+    url =  a.get('href')
+    if url[0] == '/':
+        url = 'http://zabbix.org' + url
+
+    arr[name.replace(' ','-')] = {
+      'name': name.strip().replace('_', ' ').replace('-',' ').replace('.xml','') + ' (official)',
+      'url': url,
+      'keywords': name.lower().replace('_',' ').replace('-',' ').replace('.xml','').replace('template','').split(' '),
+      'icon':  ziconizing.iconizing(name, name.lower().replace('_',' ').replace('.xml','').split(' '))
+    }
+    arr[name.replace(' ','-')]['keywords'].append('official')
+
 print json.dumps(arr)
 
