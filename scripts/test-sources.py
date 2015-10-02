@@ -3,16 +3,16 @@
 import os, sys, requests, json, re
 files = [
   '../sources/github-community-repos.json',
-  '../sources/share-zabbix.json',
   '../sources/zabbix-wiki.json',
+  '../sources/share-zabbix.json',
 ]
 
 ecode = 0
 
-for file in files:
-    print 'FILE: %s' % file
+for file in files:    
     with open(file) as data_file:
         data = json.load(data_file)
+        print '=== FILE: %s (%d) ===' % (file, len(data))
         if len(data) < 100:
             print 'Problem with parsing data for ' + file
             if 'share' not in file:
