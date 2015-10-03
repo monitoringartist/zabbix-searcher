@@ -2,6 +2,7 @@
 
 from pyquery import PyQuery as pq
 from lxml import etree
+from collections import OrderedDict
 import urllib, json, ziconizing
 
 arr = {}
@@ -45,6 +46,7 @@ for tr in d('table.wikitable.sortable tr'):
       'keywords': name.lower().split(' '),
       'icon':  ziconizing.iconizing(name, name.lower().split(' '))
     }
+off = {}
 # official templates
 d = pq(url='http://zabbix.org/wiki/Zabbix_Templates/Official_Templates')
 for a in d('li a.internal'):
@@ -56,13 +58,12 @@ for a in d('li a.internal'):
     if url[0] == '/':
         url = 'http://zabbix.org' + url
 
-    arr[name.replace(' ','-')] = {
+    off[name.replace(' ','-')] = {
       'name': name.strip().replace('_', ' ').replace('-',' ').replace('.xml','') + ' (official)',
       'url': url,
       'keywords': name.lower().replace('_',' ').replace('-',' ').replace('.xml','').replace('template','').split(' '),
       'icon':  ziconizing.iconizing(name, name.lower().replace('_',' ').replace('-',' ').replace('.xml','').split(' '))
     }
-    arr[name.replace(' ','-')]['keywords'].append('official')
-
-print json.dumps(arr)
+    off[name.replace(' ','-')]['keywords'].append('official')
+print json.dumps(OrderedDict(sorted(off.items(), key=lambda t: t[0])+sorted(arr.items(), key=lambda t: t[0])))
 
