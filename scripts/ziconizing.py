@@ -912,7 +912,7 @@ def iconizing(name, keywords):
         return 'amazon'
     if any(word in keywords for word in 'grafana grafana-zabbix'.split(' ')):
         return 'bar-chart'
-    if any(word in keywords for word in 'linux debian fedore redhat yum ubuntu openbsd aix'.split(' ')):
+    if any(word in keywords for word in 'linux debian fedore redhat yum ubuntu openbsd aix freebsd ux'.split(' ')):
         return 'linux'
     if any(word in keywords for word in 'solaris'.split(' ')):
         return 'sun-o'
@@ -922,7 +922,7 @@ def iconizing(name, keywords):
         return 'print'
     if any(word in keywords for word in 'wifi mikrotik ubiquiti airfiber'.split(' ')):
         return 'wifi'
-    if any(word in keywords for word in 'postfix mail email exim zimbra exchange qmail imap'.split(' ')):
+    if any(word in keywords for word in 'postfix mail email exim zimbra exchange qmail imap pop pop3 smtp'.split(' ')):
         return 'envelope'
     if any(word in keywords for word in 'java jvm tomcat jboss jmx'.split(' ')):
         return 'coffee'
