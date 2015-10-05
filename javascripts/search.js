@@ -40,7 +40,7 @@ function setRelatedDOMVisibility (keyword) {
   }
 }
 
-$(document).on('search keyup', function () {
+$(document).on('search keyup', '.speedy-filter', function () {
   location.hash = $(this).val().replace(' ', '_')
 })
 
