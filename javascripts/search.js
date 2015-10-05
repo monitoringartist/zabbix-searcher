@@ -44,11 +44,6 @@ $(document).on('search keyup', '.speedy-filter', function () {
   location.hash = $(this).val()
 })
 
-$(document).on('click', '.group', function () {
-  ga('send', 'event', 'search', 'quick group search')
-  search($('.speedy-filter').val($(this).attr('href').substr(1)).val())
-})
-
 $(document).on('click', '.speedy-remover', function () {
   $('.speedy-filter').val('')
   $('.result').show()
