@@ -1,6 +1,6 @@
 $(document).on('search:ready', function () {
   if (location.hash.length) {
-    search($('.speedy-filter').val(location.hash.substr(1)).val())
+    search($('.speedy-filter').val(location.hash.substr(1)).val().replace('_',' '))
   } else {
     search()
   }
@@ -51,7 +51,7 @@ $(document).on('click', '.speedy-remover', function () {
 })
 
 window.onhashchange = function () {
-  search($('.speedy-filter').val(location.hash.substr(1)).val())
+  search($('.speedy-filter').val(location.hash.substr(1)).val().replace('_',' '))
   $('[href^="#"]').removeClass('active')
   $("[href='#{location.hash}']").addClass('active')
 }
