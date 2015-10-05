@@ -5,9 +5,9 @@ Visit http://monitoringartist.github.io/zabbix-searcher
 
 Quick, responsive searcher, which searchs across all 3 main Zabbix sources:
 
-- [Github Zabbix Community Repos](https://github.com/zabbix/zabbix-community-repos) - 340+ projects
-- [Share Zabbix](https://share.zabbix.com/) - 180+ projects
-- [Zabbix Wiki](http://zabbix.org/wiki/Zabbix_Templates) - 130+ projects
+- [Github Zabbix Community Repos](https://github.com/zabbix/zabbix-community-repos) - 350+ projects
+- [Share Zabbix](https://share.zabbix.com/) - 190+ projects
+- [Zabbix Wiki](http://zabbix.org/wiki/Zabbix_Templates) - 190+ projects
 
 Please donate to author, so he can continue to publish another awesome projects 
 for free:
