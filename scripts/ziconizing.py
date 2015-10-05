@@ -926,7 +926,7 @@ def iconizing(name, keywords):
         return 'envelope'
     if any(word in keywords for word in 'java jvm tomcat jboss jmx'.split(' ')):
         return 'coffee'
-    if any(word in keywords for word in 'disks backup backupc array freenas raid qnap hdd disk netapp storwize purestorage synology hddtemp iostat emc storage veeam'.split(' ')):
+    if any(word in keywords for word in 'disks backup backuppc array freenas raid qnap hdd disk netapp storwize purestorage synology hddtemp iostat emc storage veeam'.split(' ')):
         return 'hdd-o'
     if any(word in keywords for word in 'weather'.split(' ')):
         return 'bolt'
