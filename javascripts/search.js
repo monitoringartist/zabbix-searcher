@@ -33,7 +33,7 @@ function setRelatedDOMVisibility (keyword) {
 
   if (keyword.length >= 3) {
     if (!foundSomething) {
-      ga('send', 'event', 'search', 'no results')
+      ga('send', 'event', 'search', 'no results for ' + keyword)
     } else {
       ga('send', 'event', 'search', keyword)
     }
