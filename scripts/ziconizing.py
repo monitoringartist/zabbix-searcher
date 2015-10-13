@@ -922,7 +922,7 @@ def iconizing(name, keywords):
         return 'print'
     if any(word in keywords for word in 'wifi mikrotik ubiquiti airfiber'.split(' ')):
         return 'wifi'
-    if any(word in keywords for word in 'postfix mail email exim zimbra exchange qmail imap pop pop3 smtp'.split(' ')):
+    if any(word in keywords for word in 'postfix mail email exim zimbra exchange qmail imap pop pop3 smtp dovecot'.split(' ')):
         return 'envelope'
     if any(word in keywords for word in 'java jvm tomcat jboss jmx'.split(' ')):
         return 'coffee'
