@@ -57,9 +57,25 @@ $(document).on('source-share:ready', function () {
         charHTML + "<span class='keywords'>" + project["keywords"] + "</span></li>")
       counter++
     })
+    $(document).trigger('zabbix:ready')
+  })
+})
+$(document).on('source-zabbix:ready', function () {
+  $.getJSON('./sources/zabbix-com.json', function (projects) {
+    var container = $('.container')
+    Object.keys(projects).forEach( function (key) {
+      var project = projects[key]
+      var charHTML
+      charHTML = "<div><a target='_blank' onclick=\"ga('send', 'event', 'click', 'Wiki: " + project['name'] + "'); return true;\" title='#" + counter + " " + project['name'] + "' href='" +
+        project['url'] + "'><i class='fa fa-" + project['icon'] + "'></i> " + project['name'] + "</a></div>"
+      container.append("<li class='result emoji-wrapper'>" +
+        charHTML + "<span class='keywords'>" + project["keywords"] + "</span></li>")
+      counter++
+    })
     $(document).trigger('search:ready')
   })
 })
+
 
 $(document).keydown(function (e) { focusOnSearch(e) })
 
