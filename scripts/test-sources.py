@@ -5,6 +5,7 @@ files = [
   '../sources/github-community-repos.json',
   '../sources/zabbix-wiki.json',
   '../sources/share-zabbix.json',
+  '../sources/zabbix-com.json',
 ]
 
 ecode = 0
