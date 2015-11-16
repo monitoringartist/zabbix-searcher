@@ -57,7 +57,7 @@ $(document).on('source-share:ready', function () {
         charHTML + "<span class='keywords'>" + project["keywords"] + "</span></li>")
       counter++
     })
-    $(document).trigger('zabbix:ready')
+    $(document).trigger('source-zabbix:ready')
   })
 })
 $(document).on('source-zabbix:ready', function () {
