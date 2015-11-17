@@ -25,8 +25,7 @@ for file in files:
                   print "File: %s, project %s" % (file, data[id]['name'])
                   print '  url - ' +  data[id]['url']
                   print '  ' + str(s)
-                  if 'share' not in file and 'zabbix-com' not in file:
-                      ecode = 1
+                  ecode = 1
                else:
                   if file ==  '../sources/github-community-repos.json':
                       # test link in README
