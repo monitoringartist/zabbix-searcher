@@ -305,8 +305,8 @@ code {
 
 @media (max-width: 685px) {
   .emoji-wrapper a {
-    font-size: 16px;
-    margin-bottom: 3px;
+    font-size: 18px;
+    margin-bottom: 6px;
   }
   .input-search {
     width: 65%; }
