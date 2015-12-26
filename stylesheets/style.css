@@ -304,6 +304,9 @@ code {
 }  
 
 @media (max-width: 685px) {
+  .emoji-wrapper {
+    font-size: 18px;
+  }
   .emoji-wrapper a {
     font-size: 18px;
     margin-bottom: 6px;
