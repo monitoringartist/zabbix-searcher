@@ -130,8 +130,6 @@ ul {
   *display: inline;
   *vertical-align: auto;
   width: 49%;
-  margin-left: 3px;
-  margin-right: 3px;
   height: 1.5em;
   overflow: hidden;
   white-space: nowrap; }
@@ -149,6 +147,8 @@ ul {
   .emoji-wrapper a:hover i.fa {
     color: #013e62; }    
   .emoji-wrapper a {
+    margin-left: 3px;
+    margin-right: 3px;
     width: 100%;
     display: block; }
   .emoji-wrapper a:hover, .emoji-wrapper a:focus{
@@ -304,6 +304,10 @@ code {
 }  
 
 @media (max-width: 685px) {
+  .emoji-wrapper a {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
   .input-search {
     width: 65%; }
     
