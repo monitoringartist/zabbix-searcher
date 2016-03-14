@@ -42,9 +42,11 @@ $(document).on('source-github:ready', function () {
         charHTML + "<span class='keywords'>" + project["keywords"] + "</span></li>")
       counter++
     })
-    $(document).trigger('source-share:ready')
+    $(document).trigger('search:ready')
+    //$(document).trigger('source-share:ready')
   })
 })  
+/*
 $(document).on('source-share:ready', function () {
   $.getJSON('./sources/zabbix-wiki.json', function (projects) {
     var container = $('.container')
@@ -75,7 +77,7 @@ $(document).on('source-zabbix:ready', function () {
     $(document).trigger('search:ready')
   })
 })
-
+*/
 
 $(document).keydown(function (e) { focusOnSearch(e) })
 
