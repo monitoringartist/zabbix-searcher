@@ -28,8 +28,10 @@ $.getJSON('./sources/github-community-repos.json', function (projects) {
       charHTML + "<span class='keywords'>" + project["keywords"] + "</span></li>")
     counter++
   })
-  $(document).trigger('source-github:ready')
+  //$(document).trigger('source-github:ready')
+  $(document).trigger('search:ready')
 })
+/*
 $(document).on('source-github:ready', function () {  
   $.getJSON('./sources/share-zabbix.json', function (projects) {
     var container = $('.container')
@@ -42,11 +44,9 @@ $(document).on('source-github:ready', function () {
         charHTML + "<span class='keywords'>" + project["keywords"] + "</span></li>")
       counter++
     })
-    $(document).trigger('search:ready')
-    //$(document).trigger('source-share:ready')
+    $(document).trigger('source-share:ready')
   })
-})  
-/*
+})
 $(document).on('source-share:ready', function () {
   $.getJSON('./sources/zabbix-wiki.json', function (projects) {
     var container = $('.container')
