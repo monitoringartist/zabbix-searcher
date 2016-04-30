@@ -3,11 +3,9 @@ Fancy Zabbix stuff searcher [![Build Status](https://drone.io/github.com/monitor
 
 Visit http://monitoringartist.github.io/zabbix-searcher
 
-Quick, responsive searcher, which searchs across all 3 main Zabbix sources:
+Quick, responsive searcher of projects from:
 
-- [Github Zabbix Community Repos](https://github.com/zabbix/zabbix-community-repos) - 500+ projects
-- [Share Zabbix](https://share.zabbix.com/) - 300+ projects
-- [Zabbix Wiki](http://zabbix.org/wiki/Zabbix_Templates) - 200+ projects
+- [Github Zabbix Community Repos](https://github.com/zabbix/zabbix-community-repos) - 550+ projects
 
 Please donate to author, so he can continue to publish another awesome projects 
 for free:
