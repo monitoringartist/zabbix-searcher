@@ -5,7 +5,7 @@ Visit http://monitoringartist.github.io/zabbix-searcher
 
 Quick, responsive searcher of projects from:
 
-- [Github Zabbix Community Repos](https://github.com/zabbix/zabbix-community-repos) - 550+ projects
+- [Github Zabbix Community Repos](https://github.com/zabbix/zabbix-community-repos) - 570+ projects
 
 Please donate to author, so he can continue to publish another awesome projects 
 for free:
