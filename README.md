@@ -5,7 +5,7 @@ Visit http://monitoringartist.github.io/zabbix-searcher
 
 Quick, responsive searcher of projects from:
 
-- [Github Zabbix Community Repos](https://github.com/zabbix/zabbix-community-repos) - 570+ projects
+- [Github Zabbix Community Repos](https://github.com/monitoringartist/zabbix-community-repos) - 570+ projects
 
 Please donate to author, so he can continue to publish another awesome projects 
 for free:
@@ -16,11 +16,10 @@ for free:
 Author
 ======
 
-[Devops Monitoring zExpert](http://www.jangaraj.com 'DevOps / Docker / Zabbix / Zenoss / Monitoring'), who loves monitoring 
-systems, which start with letter Z. Those are Zabbix and Zenoss.
+[Devops Monitoring Expert](http://www.jangaraj.com 'DevOps / Docker / Kubernetes / AWS ECS / Google GCP / Zabbix / Zenoss / Terraform / Monitoring'),
+who loves monitoring systems, which start with letter Z. Those are Zabbix and Zenoss.
 
-Professional monitoring services:
+Professional devops / monitoring services:
 
 [![Monitoring Artist](http://monitoringartist.com/img/github-monitoring-artist-logo.jpg)]
-(http://www.monitoringartist.com 'DevOps / Docker / Zabbix / Zenoss / Monitoring')
-
+(http://www.monitoringartist.com 'DevOps / Docker / Kubernetes / AWS ECS / Google GCP / Zabbix / Zenoss / Terraform / Monitoring')
