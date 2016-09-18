@@ -18,7 +18,7 @@ for tr in d('table.wikitable.sortable tr'):
             continue
             
         if i == 1:
-            name = 'Template ' + td.text.strip()
+            name = 'Template App ' + td.text.strip()
             vendor =  td.text.strip()
         
         try: 
@@ -26,9 +26,9 @@ for tr in d('table.wikitable.sortable tr'):
             if i == 2:
                 a = td.getchildren()[0]
                 if a.text.strip().startswith(vendor):
-                    name =  'Template ' + a.text.strip()
+                    name =  'Template App ' + a.text.strip() + ' (zabbix.org)'
                 else:
-                    name = name + ' ' + a.text.strip()
+                    name = name + ' ' + a.text.strip() + ' (zabbix.org)'
                 url =  a.get('href')
                 if url[0] == '/':
                     url = 'http://zabbix.org' + url
@@ -59,7 +59,7 @@ for a in d('li a.internal'):
         url = 'http://zabbix.org' + url
 
     off[name.replace(' ','-')] = {
-      'name': name.strip().replace('_', ' ').replace('-',' ').replace('.xml','') + ' (official)',
+      'name': name.strip().replace('_', ' ').replace('-',' ').replace('.xml','') + ' (zabbix.org - official)',
       'url': url,
       'keywords': name.lower().replace('_',' ').replace('-',' ').replace('.xml','').replace('template','').split(' '),
       'icon':  ziconizing.iconizing(name, name.lower().replace('_',' ').replace('-',' ').replace('.xml','').split(' '))
