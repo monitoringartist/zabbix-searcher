@@ -906,27 +906,27 @@ def iconizing(name, keywords):
     # custom brands
     if any(word in keywords for word in 'telnet bash sshd'.split(' ')):
         return 'terminal'
-    if any(word in keywords for word in 'db database sql rabbitmq redis riak elastic elasticsearch informix postgresql memcached mysql zbxora'.split(' ')):
+    if any(word in keywords for word in 'db etcd database sql rabbitmq redis riak elastic elasticsearch informix postgresql memcached mysql zbxora mongo'.split(' ')):
         return 'database'
-    if any(word in keywords for word in 'aws amazon ec ec2 elb rds'.split(' ')):
+    if any(word in keywords for word in 'aws amazon ec ec2 elb rds s3'.split(' ')):
         return 'amazon'
     if any(word in keywords for word in 'grafana grafana-zabbix'.split(' ')):
         return 'bar-chart'
-    if any(word in keywords for word in 'linux debian fedore redhat yum ubuntu openbsd aix freebsd ux'.split(' ')):
+    if any(word in keywords for word in 'linux selinux debian fedore redhat yum ubuntu openbsd aix freebsd ux alpine coreos'.split(' ')):
         return 'linux'
     if any(word in keywords for word in 'solaris'.split(' ')):
         return 'sun-o'
     if any(word in keywords for word in 'mac'.split(' ')):
         return 'apple'
-    if any(word in keywords for word in 'printer xerox kyocera workcenter laserjet'.split(' ')):
+    if any(word in keywords for word in 'printer xerox kyocera workcenter laserjet cups'.split(' ')):
         return 'print'
     if any(word in keywords for word in 'wifi mikrotik ubiquiti airfiber'.split(' ')):
         return 'wifi'
-    if any(word in keywords for word in 'postfix mail email exim zimbra exchange qmail imap pop pop3 smtp dovecot'.split(' ')):
+    if any(word in keywords for word in 'postfix office365 mail email exim zimbra exchange qmail imap pop pop3 smtp dovecot'.split(' ')):
         return 'envelope'
     if any(word in keywords for word in 'java jvm tomcat jboss jmx'.split(' ')):
         return 'coffee'
-    if any(word in keywords for word in 'disks backup backuppc array freenas raid qnap hdd disk netapp storwize purestorage synology hddtemp iostat emc storage veeam'.split(' ')):
+    if any(word in keywords for word in 'disks lvm drbd backup backuppc array freenas raid qnap hdd hddtemp disk netapp storwize purestorage synology hddtemp iostat emc storage veeam'.split(' ')):
         return 'hdd-o'
     if any(word in keywords for word in 'weather'.split(' ')):
         return 'bolt'
@@ -942,7 +942,7 @@ def iconizing(name, keywords):
         return 'battery-half'
     if any(word in keywords for word in 'windows'.split(' ')):
         return 'windows'
-    if any(word in keywords for word in 'vm kvm openvz xen vmware esxi server'.split(' ')):
+    if any(word in keywords for word in 'vm kvm openvz xen vmware esxi server hyper virtuozzo supermicro dell'.split(' ')):
         return 'server'
 
     # fontawesome icon automapping
