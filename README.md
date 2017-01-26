@@ -1,8 +1,10 @@
-# Fancy Zabbix stuff searcher [![Build Status](https://drone.io/github.com/monitoringartist/zabbix-searcher/status.png)](https://drone.io/github.com/monitoringartist/zabbix-searcher/latest)
+[<img src="https://monitoringartist.github.io/managed-by-monitoringartist.png" alt="Managed by Monitoring Artist: DevOps / Docker / Kubernetes / AWS ECS / Zabbix / Zenoss / Terraform / Monitoring" align="right"/>](http://www.monitoringartist.com 'DevOps / Docker / Kubernetes / AWS ECS / Zabbix / Zenoss / Terraform / Monitoring')
+
+# Zabbix searcher
 
 Visit http://monitoringartist.github.io/zabbix-searcher
 
-Quick, responsive searcher of projects from:
+Quick, responsive searcher of Zabbix projects from:
 
 - [Github Zabbix Community Repos](https://github.com/monitoringartist/zabbix-community-repos) - 700+ projects
 
