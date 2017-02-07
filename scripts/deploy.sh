@@ -2,11 +2,11 @@
 set -e
 set -x
 
-SOURCE_BRANCH="master"
+SOURCE_BRANCH="gh-pages"
 TARGET_BRANCH="gh-pages"
 
 function doCompile {
-  cd scripts
+  #cd scripts
   regenerate-sources.sh
   python test-sources.py
   #DATE=`date +"%Y-%m-%d %H:%M:%S"`
