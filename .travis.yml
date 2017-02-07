@@ -14,14 +14,9 @@ python:
 install: "pip install -r requirements.txt"
 
 script:
-  - "cd scripts"
-  - "./regenerate-sources.sh"
-  - "python test-sources.py"
-  - 'DATE=`date +"%Y-%m-%d %H:%M:%S"`'
-  - 'git commit -am "Source update $DATE"'
-  - "if [ $? -eq 0 ]; then git push git@github.com:monitoringartist/zabbix-searcher.git gh-pages; fi"
+  - "bash ./scripts/deploy.sh"
 
 env:
   global:
-  - ENCRYPTION_LABEL: "469b4b5a68a6"
+  - ENCRYPTION_LABEL: "03cc74286256"
   - COMMIT_AUTHOR_EMAIL: "jan.garaj@gmail.com"
