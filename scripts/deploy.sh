@@ -7,6 +7,8 @@ TARGET_BRANCH="gh-pages"
 
 function doCompile {
   #cd scripts
+  pwd
+  ls -lah
   regenerate-sources.sh
   python test-sources.py
   #DATE=`date +"%Y-%m-%d %H:%M:%S"`
