@@ -51,6 +51,9 @@ fi
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
+cd ..
+pwd
+ls -lah
 git add sources
 git commit -m "CI build deployment to GitHub Pages: ${SHA}"
 
