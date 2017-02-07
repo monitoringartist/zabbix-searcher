@@ -7,6 +7,7 @@ TARGET_BRANCH="gh-pages"
 
 function doCompile {
   cd scripts
+  curl -i https://api.github.com/users/whatever
   ./regenerate-sources.sh
   python test-sources.py
   #DATE=`date +"%Y-%m-%d %H:%M:%S"`
