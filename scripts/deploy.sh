@@ -6,10 +6,10 @@ SOURCE_BRANCH="gh-pages"
 TARGET_BRANCH="gh-pages"
 
 function doCompile {
-  #cd scripts
+  cd scripts
   pwd
   ls -lah
-  regenerate-sources.sh
+  ./regenerate-sources.sh
   python test-sources.py
   #DATE=`date +"%Y-%m-%d %H:%M:%S"`
   #git commit -am "Source update $DATE"
