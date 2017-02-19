@@ -13,7 +13,7 @@ def github_query(url):
     return s.text
 
 s = github_query('https://api.github.com/repos/monitoringartist/zabbix-community-repos/git/trees/master')
-print str(s)
+#print str(s)
 s = json.loads(s)
 arr = {}
 top = {}
