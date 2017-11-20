@@ -38,6 +38,7 @@ header {
   position: relative;
   line-height: 1;
   margin-bottom: 5px;
+  margin-top: 10px;
   padding: 0;
   *zoom: 1; }
   header:before, header:after {
