@@ -34,6 +34,10 @@ body {
   padding-bottom: 1px;
 }
 
+.adsbygoogle {
+  min-height: 90px;
+}
+
 header {
   position: relative;
   line-height: 1;
@@ -340,5 +344,8 @@ code {
 @media (max-width: 960px) {
   .forkme {
     display: none;
+  }
+  .adsbygoogle {
+    min-height: 60px;
   }
 }
